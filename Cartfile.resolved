@@ -1,0 +1,3 @@
+github "BatchLabs/ios-sdk" "1.15.0"
+github "akashivskyy/GoogleAnalytics-Framework" "3.17"
+github "jspahrsummers/xcconfigs" "1.0"
