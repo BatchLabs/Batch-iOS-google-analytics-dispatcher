@@ -1,3 +1,7 @@
+[![Cocoapods](https://img.shields.io/cocoapods/v/BatchGoogleAnalyticsDispatcher)](https://cocoapods.org/pods/BatchGoogleAnalyticsDispatcher)
+[![Github Action](https://github.com/BatchLabs/BatchLabs_Batch-iOS-google-analytics-dispatcher/workflows/iOS%20CI/badge.svg)](https://github.com/BatchLabs/BatchLabs_Batch-iOS-google-analytics-dispatcher/actions?query=workflow%3A%22iOS+CI%22)
+[![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=BatchLabs_Batch-iOS-google-analytics-dispatcher&metric=coverage)](https://sonarcloud.io/dashboard?id=BatchLabs_Batch-iOS-google-analytics-dispatcher)
+
 Batch.com iOS Google Analytics Event Dispatcher
 ==================
 

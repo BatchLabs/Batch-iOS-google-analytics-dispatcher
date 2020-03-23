@@ -7,26 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		511D83D024128F27003B0C35 /* BGADDictionaryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 511D83CB24128F27003B0C35 /* BGADDictionaryBuilder.h */; };
-		511D83D124128F27003B0C35 /* BatchGoogleAnalyticsDispatcherCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 511D83CC24128F27003B0C35 /* BatchGoogleAnalyticsDispatcherCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		511D83D224128F27003B0C35 /* BatchGoogleAnalyticsDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 511D83CD24128F27003B0C35 /* BatchGoogleAnalyticsDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		511D83D324128F27003B0C35 /* BatchGoogleAnalyticsDispatcherCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 511D83CE24128F27003B0C35 /* BatchGoogleAnalyticsDispatcherCore.m */; };
-		511D83D424128F27003B0C35 /* BGADDictionaryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 511D83CF24128F27003B0C35 /* BGADDictionaryBuilder.m */; };
 		511D83DB241290D9003B0C35 /* Batch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511D83DA241290D9003B0C35 /* Batch.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		511D83DF24129250003B0C35 /* GoogleAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511D83DE24129250003B0C35 /* GoogleAnalytics.framework */; };
+		62BD2D6D2428B72800C5A5DB /* BatchGoogleAnalyticsDispatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511D83C024128E98003B0C35 /* BatchGoogleAnalyticsDispatcher.framework */; };
+		62BD2D7D2428B7B600C5A5DB /* BatchPayloadDispatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2D792428B7B600C5A5DB /* BatchPayloadDispatcherTests.m */; };
+		62BD2D7F2428B83000C5A5DB /* Tests-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 62BD2D752428B7B600C5A5DB /* Tests-Prefix.pch */; };
+		62BD2D802428B85000C5A5DB /* GoogleAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511D83DE24129250003B0C35 /* GoogleAnalytics.framework */; };
+		62BD2D812428B85200C5A5DB /* Batch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511D83DA241290D9003B0C35 /* Batch.framework */; };
+		62BD2D832428B8B600C5A5DB /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BD2D822428B8B600C5A5DB /* OCMock.framework */; };
+		62BD2D862428B9B100C5A5DB /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62BD2D822428B8B600C5A5DB /* OCMock.framework */; };
+		62BD2D872428B9C100C5A5DB /* GoogleAnalytics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 511D83DE24129250003B0C35 /* GoogleAnalytics.framework */; };
+		62BD2D892428BA7600C5A5DB /* BatchGoogleAnalyticsDispatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2D882428BA7600C5A5DB /* BatchGoogleAnalyticsDispatcherTests.m */; };
+		62BD2DA02428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcherCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BD2D9C2428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcherCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62BD2DA12428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BD2D9D2428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62BD2DA22428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcherCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2D9E2428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcherCore.m */; };
+		62BD2DA32428BB1B00C5A5DB /* BGADDictionaryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BD2D9F2428BB1B00C5A5DB /* BGADDictionaryBuilder.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62BD2D6E2428B72800C5A5DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 511D83B724128E97003B0C35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 511D83BF24128E97003B0C35;
+			remoteInfo = BatchGoogleAnalyticsDispatcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62BD2D842428B97C00C5A5DB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				62BD2D872428B9C100C5A5DB /* GoogleAnalytics.framework in CopyFiles */,
+				62BD2D862428B9B100C5A5DB /* OCMock.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		511D83C024128E98003B0C35 /* BatchGoogleAnalyticsDispatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BatchGoogleAnalyticsDispatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		511D83CB24128F27003B0C35 /* BGADDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BGADDictionaryBuilder.h; path = "Batch-Google-Analytics-Dispatcher/Classes/BGADDictionaryBuilder.h"; sourceTree = SOURCE_ROOT; };
-		511D83CC24128F27003B0C35 /* BatchGoogleAnalyticsDispatcherCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BatchGoogleAnalyticsDispatcherCore.h; path = "Batch-Google-Analytics-Dispatcher/Classes/BatchGoogleAnalyticsDispatcherCore.h"; sourceTree = SOURCE_ROOT; };
-		511D83CD24128F27003B0C35 /* BatchGoogleAnalyticsDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BatchGoogleAnalyticsDispatcher.h; path = "Batch-Google-Analytics-Dispatcher/Classes/BatchGoogleAnalyticsDispatcher.h"; sourceTree = SOURCE_ROOT; };
-		511D83CE24128F27003B0C35 /* BatchGoogleAnalyticsDispatcherCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BatchGoogleAnalyticsDispatcherCore.m; path = "Batch-Google-Analytics-Dispatcher/Classes/BatchGoogleAnalyticsDispatcherCore.m"; sourceTree = SOURCE_ROOT; };
-		511D83CF24128F27003B0C35 /* BGADDictionaryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGADDictionaryBuilder.m; path = "Batch-Google-Analytics-Dispatcher/Classes/BGADDictionaryBuilder.m"; sourceTree = SOURCE_ROOT; };
-		511D83D524128F38003B0C35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "Batch-Google-Analytics-Dispatcher/Module/Info.plist"; sourceTree = SOURCE_ROOT; };
 		511D83D8241290AA003B0C35 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = "../../../../Downloads/GoogleAnalytics-3.17.0/Libraries/libGoogleAnalytics.a"; sourceTree = "<group>"; };
 		511D83DA241290D9003B0C35 /* Batch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Batch.framework; path = Carthage/Build/iOS/Batch.framework; sourceTree = "<group>"; };
 		511D83DE24129250003B0C35 /* GoogleAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAnalytics.framework; path = Carthage/Build/iOS/GoogleAnalytics.framework; sourceTree = "<group>"; };
+		62BD2D682428B72800C5A5DB /* BatchGoogleAnalyticsDispatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatchGoogleAnalyticsDispatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62BD2D732428B7B600C5A5DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62BD2D742428B7B600C5A5DB /* BatchPayloadDispatcherTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatchPayloadDispatcherTests.h; sourceTree = "<group>"; };
+		62BD2D752428B7B600C5A5DB /* Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		62BD2D782428B7B600C5A5DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		62BD2D792428B7B600C5A5DB /* BatchPayloadDispatcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatchPayloadDispatcherTests.m; sourceTree = "<group>"; };
+		62BD2D822428B8B600C5A5DB /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Carthage/Build/iOS/OCMock.framework; sourceTree = "<group>"; };
+		62BD2D882428BA7600C5A5DB /* BatchGoogleAnalyticsDispatcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatchGoogleAnalyticsDispatcherTests.m; sourceTree = "<group>"; };
+		62BD2D9C2428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcherCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BatchGoogleAnalyticsDispatcherCore.h; path = Classes/BatchGoogleAnalyticsDispatcherCore.h; sourceTree = "<group>"; };
+		62BD2D9D2428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BatchGoogleAnalyticsDispatcher.h; path = Classes/BatchGoogleAnalyticsDispatcher.h; sourceTree = "<group>"; };
+		62BD2D9E2428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcherCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BatchGoogleAnalyticsDispatcherCore.m; path = Classes/BatchGoogleAnalyticsDispatcherCore.m; sourceTree = "<group>"; };
+		62BD2D9F2428BB1B00C5A5DB /* BGADDictionaryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGADDictionaryBuilder.m; path = Classes/BGADDictionaryBuilder.m; sourceTree = "<group>"; };
+		62BD2DA42428BB2200C5A5DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Module/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +78,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62BD2D652428B72800C5A5DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62BD2D6D2428B72800C5A5DB /* BatchGoogleAnalyticsDispatcher.framework in Frameworks */,
+				62BD2D802428B85000C5A5DB /* GoogleAnalytics.framework in Frameworks */,
+				62BD2D812428B85200C5A5DB /* Batch.framework in Frameworks */,
+				62BD2D832428B8B600C5A5DB /* OCMock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				511D83C224128E98003B0C35 /* BatchGoogleAnalyticsDispatcher */,
+				62BD2D692428B72800C5A5DB /* BatchGoogleAnalyticsDispatcherTests */,
 				511D83C124128E98003B0C35 /* Products */,
 				511D83D7241290AA003B0C35 /* Frameworks */,
 			);
@@ -55,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				511D83C024128E98003B0C35 /* BatchGoogleAnalyticsDispatcher.framework */,
+				62BD2D682428B72800C5A5DB /* BatchGoogleAnalyticsDispatcherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,12 +114,11 @@
 		511D83C224128E98003B0C35 /* BatchGoogleAnalyticsDispatcher */ = {
 			isa = PBXGroup;
 			children = (
-				511D83CD24128F27003B0C35 /* BatchGoogleAnalyticsDispatcher.h */,
-				511D83CC24128F27003B0C35 /* BatchGoogleAnalyticsDispatcherCore.h */,
-				511D83CE24128F27003B0C35 /* BatchGoogleAnalyticsDispatcherCore.m */,
-				511D83CB24128F27003B0C35 /* BGADDictionaryBuilder.h */,
-				511D83CF24128F27003B0C35 /* BGADDictionaryBuilder.m */,
-				511D83D524128F38003B0C35 /* Info.plist */,
+				62BD2DA42428BB2200C5A5DB /* Info.plist */,
+				62BD2D9D2428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcher.h */,
+				62BD2D9C2428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcherCore.h */,
+				62BD2D9E2428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcherCore.m */,
+				62BD2D9F2428BB1B00C5A5DB /* BGADDictionaryBuilder.m */,
 			);
 			path = BatchGoogleAnalyticsDispatcher;
 			sourceTree = "<group>";
@@ -75,11 +126,33 @@
 		511D83D7241290AA003B0C35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				62BD2D822428B8B600C5A5DB /* OCMock.framework */,
 				511D83DE24129250003B0C35 /* GoogleAnalytics.framework */,
 				511D83DA241290D9003B0C35 /* Batch.framework */,
 				511D83D8241290AA003B0C35 /* libGoogleAnalytics.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62BD2D692428B72800C5A5DB /* BatchGoogleAnalyticsDispatcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				62BD2D882428BA7600C5A5DB /* BatchGoogleAnalyticsDispatcherTests.m */,
+				62BD2D742428B7B600C5A5DB /* BatchPayloadDispatcherTests.h */,
+				62BD2D792428B7B600C5A5DB /* BatchPayloadDispatcherTests.m */,
+				62BD2D762428B7B600C5A5DB /* en.lproj */,
+				62BD2D732428B7B600C5A5DB /* Info.plist */,
+				62BD2D752428B7B600C5A5DB /* Tests-Prefix.pch */,
+			);
+			path = BatchGoogleAnalyticsDispatcherTests;
+			sourceTree = "<group>";
+		};
+		62BD2D762428B7B600C5A5DB /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				62BD2D772428B7B600C5A5DB /* InfoPlist.strings */,
+			);
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +162,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				511D83D224128F27003B0C35 /* BatchGoogleAnalyticsDispatcher.h in Headers */,
-				511D83D124128F27003B0C35 /* BatchGoogleAnalyticsDispatcherCore.h in Headers */,
-				511D83D024128F27003B0C35 /* BGADDictionaryBuilder.h in Headers */,
+				62BD2DA12428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcher.h in Headers */,
+				62BD2DA02428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcherCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +188,25 @@
 			productReference = 511D83C024128E98003B0C35 /* BatchGoogleAnalyticsDispatcher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		62BD2D672428B72800C5A5DB /* BatchGoogleAnalyticsDispatcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62BD2D722428B72800C5A5DB /* Build configuration list for PBXNativeTarget "BatchGoogleAnalyticsDispatcherTests" */;
+			buildPhases = (
+				62BD2D642428B72800C5A5DB /* Sources */,
+				62BD2D652428B72800C5A5DB /* Frameworks */,
+				62BD2D662428B72800C5A5DB /* Resources */,
+				62BD2D842428B97C00C5A5DB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62BD2D6F2428B72800C5A5DB /* PBXTargetDependency */,
+			);
+			name = BatchGoogleAnalyticsDispatcherTests;
+			productName = BatchGoogleAnalyticsDispatcherTests;
+			productReference = 62BD2D682428B72800C5A5DB /* BatchGoogleAnalyticsDispatcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +217,9 @@
 				ORGANIZATIONNAME = Batch;
 				TargetAttributes = {
 					511D83BF24128E97003B0C35 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					62BD2D672428B72800C5A5DB = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -144,6 +238,7 @@
 			projectRoot = "";
 			targets = (
 				511D83BF24128E97003B0C35 /* BatchGoogleAnalyticsDispatcher */,
+				62BD2D672428B72800C5A5DB /* BatchGoogleAnalyticsDispatcherTests */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +251,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62BD2D662428B72800C5A5DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62BD2D7F2428B83000C5A5DB /* Tests-Prefix.pch in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -163,12 +266,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				511D83D324128F27003B0C35 /* BatchGoogleAnalyticsDispatcherCore.m in Sources */,
-				511D83D424128F27003B0C35 /* BGADDictionaryBuilder.m in Sources */,
+				62BD2DA22428BB1B00C5A5DB /* BatchGoogleAnalyticsDispatcherCore.m in Sources */,
+				62BD2DA32428BB1B00C5A5DB /* BGADDictionaryBuilder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62BD2D642428B72800C5A5DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62BD2D7D2428B7B600C5A5DB /* BatchPayloadDispatcherTests.m in Sources */,
+				62BD2D892428BA7600C5A5DB /* BatchGoogleAnalyticsDispatcherTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62BD2D6F2428B72800C5A5DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 511D83BF24128E97003B0C35 /* BatchGoogleAnalyticsDispatcher */;
+			targetProxy = 62BD2D6E2428B72800C5A5DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62BD2D772428B7B600C5A5DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62BD2D782428B7B600C5A5DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		511D83C624128E98003B0C35 /* Debug */ = {
@@ -299,7 +430,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Batch-Google-Analytics-Dispatcher/Module/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/BatchGoogleAnalyticsDispatcher/Module/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +460,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Batch-Google-Analytics-Dispatcher/Module/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/BatchGoogleAnalyticsDispatcher/Module/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -343,6 +474,48 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.batch.BatchGoogleAnalyticsDispatcher;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		62BD2D702428B72800C5A5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5K2ETC2Y6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BatchGoogleAnalyticsDispatcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.batch.ios.BatchGoogleAnalyticsDispatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62BD2D712428B72800C5A5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5K2ETC2Y6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BatchGoogleAnalyticsDispatcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.batch.ios.BatchGoogleAnalyticsDispatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -364,6 +537,15 @@
 			buildConfigurations = (
 				511D83C924128E98003B0C35 /* Debug */,
 				511D83CA24128E98003B0C35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62BD2D722428B72800C5A5DB /* Build configuration list for PBXNativeTarget "BatchGoogleAnalyticsDispatcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62BD2D702428B72800C5A5DB /* Debug */,
+				62BD2D712428B72800C5A5DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

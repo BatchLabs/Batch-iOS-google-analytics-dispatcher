@@ -21,7 +21,12 @@ Pod::Spec.new do |s|
   s.static_framework = true
   
   s.dependency 'GoogleAnalytics'
-
-  s.source_files = 'Batch-Google-Analytics-Dispatcher/Classes/**/*'
   s.dependency 'Batch', '~> 1.15'
+
+  s.source_files = 'BatchGoogleAnalyticsDispatcher/Classes/**/*'
+
+  s.test_spec 'Tests' do |test_spec|
+    test_spec.source_files = 'BatchGoogleAnalyticsDispatcherTests/*.{h,m}'
+    test_spec.dependency 'OCMock'
+  end 
 end

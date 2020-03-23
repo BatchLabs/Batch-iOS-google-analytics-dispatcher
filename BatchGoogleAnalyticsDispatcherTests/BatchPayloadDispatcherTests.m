@@ -1,16 +1,11 @@
-//
-//  BatchPayloadDispatcherTests.m
-//  Batch-Google-Analytics-Dispatcher_Tests
-//
-//  Created by Elliot Gouy on 31/10/2019.
-//  Copyright © 2019 elliot. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 #import "BatchPayloadDispatcherTests.h"
 
 @implementation BatchPayloadDispatcherTest
+
+@synthesize notificationUserInfo;
+@synthesize sourceMessage;
 
 - (nonnull instancetype)init
 {

@@ -1,14 +1,6 @@
-//
-//  BatchGoogleAnalyticsDispatcher.m
-//  Batch-Google-Analytics-Dispatcher_Tests
-//
-//  Created by Elliot Gouy on 31/10/2019.
-//  Copyright © 2019 elliot. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
-#import <OCMock.h>
+#import <OCMock/OCMock.h>
 #import <GoogleAnalytics/GAI.h>
 
 #import "BatchGoogleAnalyticsDispatcher.h"
@@ -58,7 +50,7 @@
 - (void)testPushNoData
 {
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"push",
@@ -76,7 +68,7 @@
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     testPayload.deeplink = @"https://batch.com?utm_source=batchsdk&utm_medium=push-batch&utm_campaign=yoloswag&utm_content=button1";
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"push",
@@ -96,7 +88,7 @@
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     testPayload.deeplink = @"https://batch.com?utm_source=%5Bbatchsdk%5D&utm_medium=push-batch&utm_campaign=yoloswag&utm_content=button1";
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"push",
@@ -116,7 +108,7 @@
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     testPayload.deeplink = @"https://batch.com#utm_source=batch-sdk&utm_medium=pushbatch01&utm_campaign=154879548754&utm_content=notif001";
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"push",
@@ -136,7 +128,7 @@
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     testPayload.deeplink = @"    \n     https://batch.com#utm_source=batch-sdk&utm_medium=pushbatch01&utm_campaign=154879548754&utm_content=notif001     \n    ";
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"push",
@@ -156,7 +148,7 @@
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     testPayload.deeplink = @"https://batch.com/test#utm_source=%5Bbatch-sdk%5D&utm_medium=pushbatch01&utm_campaign=154879548754&utm_content=notif001";
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"push",
@@ -182,7 +174,7 @@
         @"utm_content": @"allo118218",
     };
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"push",
@@ -205,7 +197,7 @@
         @"utm_medium": @"654987",
     };
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeNotificationOpen payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"push",
@@ -224,7 +216,7 @@
 {
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeInAppShow andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeMessagingShow payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"in-app",
@@ -242,7 +234,7 @@
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     testPayload.trackingId = @"jesuisuntrackingid";
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeInAppShow andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeMessagingShow payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"in-app",
@@ -262,7 +254,7 @@
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     testPayload.deeplink = @"https://batch.com/test-ios?utm_content=yoloswag";
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeInAppClick andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeMessagingClick payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"in-app",
@@ -281,7 +273,7 @@
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     testPayload.deeplink = @"https://batch.com/test-ios?UtM_coNTEnt=yoloswag";
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeInAppClick andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeMessagingClick payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"in-app",
@@ -301,7 +293,7 @@
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     testPayload.deeplink = @"https://batch.com/test-ios#utm_content=yoloswag2";
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeInAppClick andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeMessagingClick payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"in-app",
@@ -320,7 +312,7 @@
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     testPayload.deeplink = @"https://batch.com/test-ios#uTm_CoNtEnT=yoloswag2";
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeInAppClick andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeMessagingClick payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"in-app",
@@ -339,7 +331,7 @@
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     testPayload.deeplink = @"https://batch.com/test-ios?utm_content=testprio#utm_content=yoloswag2";
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeInAppClose andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeMessagingClose payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"in-app",
@@ -358,7 +350,7 @@
     BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
     testPayload.deeplink = @"https://batch.com?utm_content=jesuisuncontent";
     
-    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeInAppAutoClose andPayload:testPayload];
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeMessagingAutoClose payload:testPayload];
     
     NSDictionary<NSString *, id> *expectedParameters = @{
         @"&ec": @"in-app",
