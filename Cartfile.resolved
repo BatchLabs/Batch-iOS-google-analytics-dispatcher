@@ -1,4 +1,4 @@
-github "BatchLabs/ios-sdk" "1.15.0"
+github "BatchLabs/ios-sdk" "1.15.1"
 github "akashivskyy/GoogleAnalytics-Framework" "3.17"
 github "erikdoe/ocmock" "v3.6"
 github "jspahrsummers/xcconfigs" "1.0"

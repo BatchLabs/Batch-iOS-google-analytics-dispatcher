@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'BatchGoogleAnalyticsDispatcher'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Batch.com Events Dispatcher Google Analytics implementation.'
 
   s.description      = <<-DESC
@@ -24,9 +24,4 @@ Pod::Spec.new do |s|
   s.dependency 'Batch', '~> 1.15'
 
   s.source_files = 'BatchGoogleAnalyticsDispatcher/Classes/**/*'
-
-  s.test_spec 'Tests' do |test_spec|
-    test_spec.source_files = 'BatchGoogleAnalyticsDispatcherTests/*.{h,m}'
-    test_spec.dependency 'OCMock'
-  end 
 end
